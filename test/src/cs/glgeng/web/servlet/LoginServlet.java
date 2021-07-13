@@ -42,7 +42,6 @@ public class LoginServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-
         // 4 调用UserDao的login方法
         userDao dao = new userDao();
         User user = dao.login(loginUser);
