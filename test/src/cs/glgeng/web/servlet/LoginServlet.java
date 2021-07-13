@@ -22,8 +22,6 @@ public class LoginServlet extends HttpServlet {
         // 1 设置编码
         req.setCharacterEncoding("utf-8");
 
-
-
 //        // 2 获取请求参数
 //        String username = req.getParameter("username");
 //        String password = req.getParameter("password");
