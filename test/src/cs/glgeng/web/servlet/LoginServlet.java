@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 1 设置编码     20210713
+        // 1 设置编码
         req.setCharacterEncoding("utf-8");
 
 
@@ -40,9 +40,7 @@ public class LoginServlet extends HttpServlet {
         // 3.2 使用BeanUtils封装  简化代码  避免代码冗余
         try {
             BeanUtils.populate(loginUser, map);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+        } catch (IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
 
