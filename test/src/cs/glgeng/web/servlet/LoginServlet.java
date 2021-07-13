@@ -19,7 +19,7 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        // 1 设置编码
+        // 1 设置编码     20210713
         req.setCharacterEncoding("utf-8");
 
 
